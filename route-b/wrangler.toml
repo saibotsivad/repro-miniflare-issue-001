@@ -1,0 +1,9 @@
+type = "javascript"
+workers_dev = false
+compatibility_date = "2022-05-20"
+
+[miniflare]
+routes = [
+  "http://localhost:3000/b",
+  "http://localhost:3000/b/*",
+]

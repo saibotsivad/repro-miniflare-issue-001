@@ -1,0 +1,13 @@
+{
+  "name": "repro-miniflare-issue-001",
+  "scripts": {
+    "dev-broken": "miniflare --env ./route-a/.env.test --mount a=./route-a --mount b=./route-b --watch --debug -p 3000",
+    "dev-working": "miniflare --env ./route-b/.env --mount a=./route-a --mount b=./route-b --watch --debug -p 3000"
+  },
+  "license": "ISC",
+  "homepage": "https://github.com/saibotsivad/repro-miniflare-issue-001#readme",
+  "dependencies": {
+    "@cloudflare/wrangler": "^1.19.12",
+    "miniflare": "^2.4.0"
+  }
+}
